@@ -11,13 +11,14 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api': {
-        target: 'http://roast-coffee.com/api/',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/api': '/'
-        }
-      }
+      '/kdfs': {
+        target: 'http://test-api.kmf.com/',
+        changeOrigin: true
+      },
+      '/': {
+        target: 'http://test-api-kdfs.kmf.com/',
+        changeOrigin: true
+      },
     },
 
     // Various Dev Server settings
